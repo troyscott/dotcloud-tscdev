@@ -1,2 +1,2 @@
-mkdir -p /home/dotcloud/data/media /home/dotcloud/volatile/static
+mkdir -p /home/dotcloud/data/media /home/dotcloud/data/static
 python webdev/manage.py collectstatic --noinput

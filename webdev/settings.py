@@ -1,13 +1,15 @@
 # Django settings for webdev project.
 
 import os
-import os.path
+import json
+with open('/home/dotcloud/environment.json') as f:
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-
-PROJECT_DIR = os.path.dirname(__file__)
+setting_dir = os.path.dirname(__file__)
+PROJECT_ROOT = os.path.abspath(os.path.dirname(settings_dir))
 
 
 
@@ -53,13 +55,13 @@ MEDIA_URL = '/media/'
 
 # Static Files
 
-STATIC_ROOT = '/home/dotcloud/volatile/static/'
+STATIC_ROOT = '/home/dotcloud/data/static/'
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-
-
+	'/home/dotcloud/current/static',
+	
 
 )
 
@@ -94,7 +96,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'webdev.urls'
 
 TEMPLATE_DIRS = (
-	os.path.join(PROJECT_DIR, 'webdev/templates/'),
+	os.path.join(PROJECT_ROOT, 'webdev/templates/'),
 	
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
