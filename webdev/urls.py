@@ -1,14 +1,12 @@
 from django.conf.urls.defaults import *
-from views import index
-from usgs.views import feed
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	(r'^$', index),
-	(r'^usgs/$', feed),
+	(r'^$', 'webdev.views.index'),
+	(r'^usgs/$', 'webdev.usgs.views.feed'),
 
     # Example:
     # (r'^webdev/', include('webdev.foo.urls')),
