@@ -3,8 +3,7 @@ from django.http import HttpResponse
 
 
 def feed(request):
-	return HttpResponse('This is the usgs feed...')
-
+	return HttpResponse('This is the usgs feed')
 
 
 

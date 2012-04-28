@@ -42,22 +42,20 @@ MEDIA_ROOT = '/home/dotcloud/data/media/'
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
 MEDIA_URL = '/media/'
 
+# Static Files
 
-# Absolute file path to static files
 STATIC_ROOT = '/home/dotcloud/volatile/static/'
-
 
 STATIC_URL = '/static/'
 
-
-# Additional location for static files
 STATICFILES_DIRS = (
+
+
 
 )
 
-# List of finder classes that know how to find static files in
-# various locations
-STATICFILES_FINDERS = (
+
+STATICFILES_FINDERS (
 	'django.contrib.staticfiles.finders.FileSystemFinder',
 	'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 
@@ -65,8 +63,14 @@ STATICFILES_FINDERS = (
 )
 
 
+
+# URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
+# trailing slash.
+# Examples: "http://foo.com/media/", "/media/".
+ADMIN_MEDIA_PREFIX = '/media/'
+
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = ')675@krsxif+k^+d&$v0*wusj_wm)c5$&$_43o(^e0t*m(xr0)'
+SECRET_KEY = '%xuyi_p^cimn3+4sb_g994#)o0^3^dq40-=$a8so_50f)vfea@'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -95,4 +99,5 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
 	'django.contrib.staticfiles',
-	'usgs',)
+	'usgs',
+)
