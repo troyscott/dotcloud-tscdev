@@ -5,7 +5,7 @@ from django.conf.urls.defaults import *
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	('^usgs/$', 'usgs.views.feed'),
+	url(r'^usgs/$', 'usgs.views.feed'),
 
 
     # Example:
