@@ -1,4 +1,4 @@
 www:
  type: python
- approot: webdev
+ approot: tscdev-app 
 
