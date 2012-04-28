@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response
 
 def feed(request):
 
-	return render_to_response('usgs.html')
+	return render_to_response('webdev/usgs.html')
 
 
 
