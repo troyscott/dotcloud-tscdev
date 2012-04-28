@@ -1,4 +1,6 @@
 # Django settings for webdev project.
+
+import os
 import os.path
 
 DEBUG = True
@@ -75,9 +77,12 @@ SECRET_KEY = '%xuyi_p^cimn3+4sb_g994#)o0^3^dq40-=$a8so_50f)vfea@'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.load_template_source',
-    'django.template.loaders.app_directories.load_template_source',
-#     'django.template.loaders.eggs.load_template_source',
+	('django.template.loaders.cached.Loader', (
+        'django.template.loaders.filesystem.Loader',
+        'django.template.loaders.app_directories.Loader',
+    )),
+
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -89,7 +94,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'webdev.urls'
 
 TEMPLATE_DIRS = (
-	os.path.join(PROJECT_DIR, 'templates'),
+	os.path.join(PROJECT_DIR, 'webdev/templates/'),
 	
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
