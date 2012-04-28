@@ -7,8 +7,8 @@ from usgs.views import feed
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	urls('^$', index),
-	urls('^usgs/$', feed),
+	(r'^$', index),
+	(r'^usgs/$', feed),
 
     # Example:
     # (r'^webdev/', include('webdev.foo.urls')),
