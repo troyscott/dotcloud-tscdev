@@ -1,11 +1,14 @@
 from django.conf.urls.defaults import *
+from views import quake
+from usgs.views import feed
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^usgs/', 'usgs.views.feed'),
+	url(r'^quake/$', quake),
+	url(r'^usgs/', feed),
 
 
     # Example:
