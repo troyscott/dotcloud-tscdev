@@ -1,4 +1,5 @@
 # Create your views here.
+from django.template import Template, Context
 from django.http import HttpResponse
 
 
