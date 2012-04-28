@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 
 
-def quake(request):
+def index(request):
 	return HttpResponse('hello world')
 
 
