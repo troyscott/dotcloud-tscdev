@@ -55,19 +55,18 @@ STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional location for static files
-STATICFILES_DIRS = {
+STATICFILES_DIRS = (
 
-
-}
+)
 
 # List of finder classes that know how to find static files in
 # various locations
-STATICFILES_FINDERS = {
+STATICFILES_FINDERS = (
 	'django.contrib.staticfiles.finders.FileSystemFinder',
 	'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 
 
-}
+)
 
 
 # Make this unique, and don't share it with anybody.
