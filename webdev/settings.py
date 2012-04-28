@@ -97,7 +97,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'webdev.urls'
 
 TEMPLATE_DIRS = (
-	os.path.join(PROJECT_ROOT, 'webdev/templates/'),
+	os.path.join(PROJECT_ROOT, 'templates'),
 	
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
