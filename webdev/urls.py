@@ -5,6 +5,9 @@ from django.conf.urls.defaults import *
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+	('^usgs/$', 'usgs.views.feed'),
+
+
     # Example:
     # (r'^webdev/', include('webdev.foo.urls')),
 
