@@ -9,7 +9,7 @@ with open('/home/dotcloud/environment.json') as f:
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-setting_dir = os.path.dirname(__file__)
+settings_dir = os.path.dirname(__file__)
 PROJECT_ROOT = os.path.abspath(os.path.dirname(settings_dir))
 
 
