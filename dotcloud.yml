@@ -1,3 +1,4 @@
 www:
  type: python
- apprott: webdev
+ approot: webdev
+
