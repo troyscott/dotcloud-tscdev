@@ -1,2 +1,3 @@
-mkdir -p /home/dotcloud/data/media /home/dotcloud/data/static
+mkdir -p /home/dotcloud/data/media 
+mkdir -p /home/dotcloud/data/static
 python webdev/manage.py collectstatic --noinput
