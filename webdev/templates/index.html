@@ -4,24 +4,31 @@
 <title>
 tscdev - mobile development site 
 </title>
-<link rel="stylesheet" href="static/main.css" />
+<link type="text/css" href="static/css/smoothness/jquery-ui-1.8.19.custom.css" rel="Stylesheet" />	
+<script type="text/javascript" src="static/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="static/js/jquery-ui-1.8.19.custom.min.js"></script>
+<script>
+
+	$(function(){
+		$("#tabs").tabs();
+
+	});
+
+
+</script>
 
 </head>
 <body>
 <h1>Mobile Development </h1>
 
 <h2>Lessons</h2>
-
-<ul>
-<li>Lesson 1 - Introducing HTML and CSS</li>
-<li>Lesson 2 - The Lunch Menu Mobile App</li>
+<div id="tabs">
+<ul >
+<li><a href="#tab-1">Lesson 1 </a></li>
+<li><a href="#tab-2">Lesson 2 </a></li>
 
 </ul>
+</div>
 
-<h2>Mobile Apps</h2>
-
-<ul>
-<li>USGS Earthquake App</li>
-</ul>
 </body>
 </html>
