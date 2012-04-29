@@ -5,7 +5,7 @@ from django.conf.urls.defaults import *
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-	(r'^$', 'webdev.views.index'),
+	(r'^/$', 'webdev.views.index'),
 	(r'^usgs/$', 'webdev.usgs.views.feed'),
 
     # Example:
