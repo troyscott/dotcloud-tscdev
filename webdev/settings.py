@@ -57,7 +57,7 @@ MEDIA_URL = '/media/'
 
 # Static Files
 
-STATIC_ROOT = '/home/dotcloud/data/static/'
+STATIC_ROOT = '/home/dotcloud/volatile/static/'
 
 STATIC_URL = '/static/'
 
