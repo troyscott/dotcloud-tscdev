@@ -2,8 +2,9 @@
 
 import os
 import json
-with open('/home/dotcloud/environment.json') as f:
-	env = json.load(f)
+
+# with open('/home/dotcloud/environment.json') as f:
+#	env = json.load(f)
 
 
 DEBUG = True
