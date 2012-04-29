@@ -62,9 +62,9 @@ STATIC_ROOT = '/home/dotcloud/data/static/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-	'/home/dotcloud/current/static',
-#	'home/dotcloud/static/',
-#	'/home/scottt/dotcloud/tscdev-app/static',	
+#	'/home/dotcloud/current/static',
+#	'/home/dotcloud/static/',
+	'/home/scottt/dotcloud/tscdev-app/static',	
 
 )
 
