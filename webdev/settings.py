@@ -62,9 +62,7 @@ STATIC_ROOT = '/home/dotcloud/data/static/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-#	'/home/dotcloud/current/static',
-#	'/home/dotcloud/static/',
-	'/home/scottt/dotcloud/tscdev-app/static',	
+	os.path.join(PROJECT_ROOT, 'static/'),
 
 )
 
